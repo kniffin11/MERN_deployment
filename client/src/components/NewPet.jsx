@@ -1,4 +1,4 @@
-import {useHistory} from 'react-router-dom';
+import {useHistory, Link} from 'react-router-dom';
 import React, {useState} from 'react';
 import axios from 'axios';
 
@@ -34,6 +34,7 @@ const NewPet = (props) => {
 
     return (
         <div className="container">
+            <p><Link to={'/'}>Go Back</Link></p>
             <form onSubmit={addPet}>
                 <div className="form-group">
                     <label htmlFor="petName">Pet Name: </label>

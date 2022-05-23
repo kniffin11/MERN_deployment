@@ -1,7 +1,6 @@
-// title price description
 const mongoose = require("mongoose");
 
-const AuthorSchema = new mongoose.Schema({
+const PetSchema = new mongoose.Schema({
     petName: {
         type: String,
         required: [true, "Name is required"],
@@ -32,6 +31,6 @@ const AuthorSchema = new mongoose.Schema({
     }
 }, {timestamps: true})
 
-const author = mongoose.model("author", AuthorSchema);
+const pet = mongoose.model("pet", PetSchema);
 
-module.exports = author;
+module.exports = pet;

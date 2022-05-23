@@ -39,7 +39,6 @@ const EditPet = (props) => {
                 if(response.data.error){
                     setErrors(response.data.error.errors);
                 } else {
-                    props.setNewPet(!props.newPet);
                     history.push("/");
                 }
             })
