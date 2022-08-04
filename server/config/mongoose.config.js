@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
-const db_name = "beltExam"
+const db_name = "" // removed
 
 // CLOUD CONNECTION 
 
-mongoose.connect(`mongodb+srv://root:root@cluster0.7rjdb.mongodb.net/${db_name}?retryWrites=true&w=majority`, {
+mongoose.connect( url_here , { 
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
